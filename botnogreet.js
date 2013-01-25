@@ -244,7 +244,7 @@ var o_chatcmds = {
         },
 		'/Nopeyoucantdothis': {
             f: f_joke,
-            needsPerm: false
+            needsPerm: true
         },
 		'/test': {
             f: f_test,
