@@ -63,7 +63,7 @@ function f_commands(data) {
 		}
 	}
 	cmds_clean = cmds.slice(0, -2);
-    //API.sendChat('/me Commands currently supported are: /commands, /rules, /cookie, /lock, /unlock, /skip, /retry, /rapes super, /hugs super, brb, /about, /autoskip, /joke, /test, /reload, /dance');
+    //API.sendChat('/me Commands currently supported are: /commands, /rules, /cookie, /lock, /unlock, /skip, /retry, /rapes super, /hugs super, brb, /about, /autoskip, /joke, /test, /reload, /swag');
 	API.sendChat('/me Commands currently supported are: '+cmds_clean);
 }
 
@@ -134,11 +134,11 @@ function f_hug(data) {
         API.sendChat('/me Rapes @'+data.from+'!');
 }
 function f_dance(data) {
-        API.sendChat('/me Is a dancing queen!');
+        API.sendChat('/me yo yo @'+data.from+' Dont question my swag boi k? do you even lift? ');
 }
 function f_rule(data) {
         API.sendChat('@'+data.from+' Rules: '+o_settings.rules);
-}
+}'
 function f_about(data) {
 		API.sendChat('/me Hello, I am superbot. I am here to help around.');
 }
@@ -270,7 +270,7 @@ var o_chatcmds = {
             f: f_userIntentLeave,
             needsPerm: false
         },
-        '/dance': {
+        '/swag': {
             f: f_dance,
             needsPerm: false
         },
