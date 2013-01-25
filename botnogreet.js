@@ -124,7 +124,7 @@ function f_retry(data) {
 }		
 function f_cookie(data) {
         API.sendChat('@'+data.from+': here you go!');
-        window.setTimeout(function(){API.sendChat('/me [superbot] tosses a cookie at '+data.from);}, 500);
+        window.setTimeout(function(){API.sendChat('/me [superbot] Hands a Drink to '+data.from);}, 500);
 }
 function f_rape(data) {
         API.sendChat('/me O_O @'+data.from+'!');
@@ -214,7 +214,7 @@ var o_chatcmds = {
             needsPerm: true,
             needsLocalPerm: true
         },
-        '/cookie': {
+        '/drink': {
             f: f_cookie,
             needsPerm: false
         },
@@ -248,7 +248,7 @@ var o_chatcmds = {
         },
 		'/test': {
             f: f_test,
-            needsPerm: true
+            needsPerm: false
         },
 		'/reload': {
             f: f_reload,
