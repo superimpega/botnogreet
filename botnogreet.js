@@ -242,7 +242,7 @@ var o_chatcmds = {
             f: f_toggleStrictMode,
             needsPerm: true
         },
-		'/joke': {
+		'/Nopeyoucantdothis': {
             f: f_joke,
             needsPerm: false
         },
