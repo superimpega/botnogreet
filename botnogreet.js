@@ -123,7 +123,7 @@ function f_retry(data) {
               });}, 5000);
 }		
 function f_cookie(data) {
-        API.sendChat('@'+data.from+': here you go!');
+        API.sendChat('@'+data.from+': Coming right up!');
         window.setTimeout(function(){API.sendChat('/me [superbot] Hands a Drink to '+data.from);}, 500);
 }
 function f_rape(data) {
