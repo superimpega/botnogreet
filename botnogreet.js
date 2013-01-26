@@ -51,7 +51,7 @@ function leave(user)
 	
 function f_curate(data)
 { 
-	API.sendChat("/me " + data.user.username + " Loves this track!");
+	API.sendChat();
 }
     
 function f_commands(data) {
@@ -290,7 +290,7 @@ function f_checkChat(data) {
                     API.sendChat('@'+data.from+': Need moderator rights, sorry.');
                     return;
                 }
-                if(API.getUser(data.fromID).moderator || API.getUser(data.fromID).owner) {
+                if(API.getUser(data.fromID).bouncer || API.getUser(data.fromID).owner) {
                     o.f(data);
                 } else {
                     API.sendChat('@'+data.from+': Im sorry, but Im afraid I cant let you do that.');
