@@ -14,7 +14,7 @@ var o_tmp = {};
 var b_hasModRights = true;
 var o_autoSkipOpts = {
   strictMode: false,
-	maxSongLength:7, // in mins
+	maxSongLength:10, // in mins
 	i_timerID: null,
 	f_autoSkip: f_long
 };
