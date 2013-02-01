@@ -290,7 +290,7 @@ function f_checkChat(data) {
                     API.sendChat('@'+data.from+': Need moderator rights, sorry.');
                     return;
                 }
-                if(API.getUser(data.fromID).bouncer || API.getUser(data.fromID).owner) {
+                if(API.getStaff(data.fromID.1 || API.getStaff(data.fromID).5) {
                     o.f(data);
                 } else {
                     API.sendChat('@'+data.from+': Im sorry, but Im afraid I cant let you do that.');
